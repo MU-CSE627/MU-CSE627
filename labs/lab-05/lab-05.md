@@ -37,7 +37,9 @@ And run the `orange-canvas` graphical user interface (GUI) program
 python -m Orange.canvas
 ```
 
-You should see a welcome screen ![Welcome Screen](https://orange.biolab.si/static/homepage/getting_started/welcome-screen.png)
+You should see a welcome screen 
+
+![Welcome Screen](https://orange.biolab.si/static/homepage/getting_started/welcome-screen.png)
 
 Go ahead and close that immediately; we are interested in the main screen.
 
