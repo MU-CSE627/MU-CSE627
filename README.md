@@ -1,3 +1,6 @@
+# New Additions
+Check out labX for my tutorial on ensemble learning! 
+
 # System Setup
 
 ## Using Docker
