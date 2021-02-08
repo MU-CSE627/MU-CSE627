@@ -7,13 +7,14 @@ services:
     environment:
       TZ: '${TZ}'
       JUPYTER_ENABLE_LAB: 'yes'
-      NB_UID: '${UID}'
-      NB_GID: '${GID}'
+      # NB_UID: '${UID}'
+      # NB_GID: '${GID}'
       RESTARTABLE: 'yes'
     user: 'root'
     expose:
       - '8888'
     ports:
       - '127.0.0.1:8888:8888'
+    working_dir: /home/jovyan/work
     volumes:
       - ./:/home/jovyan/work

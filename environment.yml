@@ -1,7 +1,8 @@
 name: cse627
 dependencies:
-  - anaconda
-  - jupyter
   - numpy
   - scipy
   - scikit-learn
+  - matplotlib
+  - ipython
+  - ipykernel
