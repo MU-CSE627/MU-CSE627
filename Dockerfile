@@ -1,13 +1,5 @@
-FROM continuumio/anaconda
+FROM jupyter/scipy-notebook
 
-# enable utf-8 locale
-ENV PYTHONUNBUFFERED 1
+COPY environment.yml ./
 
-RUN conda install -y scikit-learn jupyter
-
-ENV PS1="# "
-
-CMD ["jupyter", "notebook", "--ip=*", "--allow-root" ]
-
-VOLUME /workspace
-WORKDIR /workspace
+RUN conda env update --prune

@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  jupyter:
+    build: .
+    restart: 'no'
+    environment:
+      TZ: '${TZ}'
+      JUPYTER_ENABLE_LAB: 'yes'
+      NB_UID: '${UID}'
+      NB_GID: '${GID}'
+      RESTARTABLE: 'yes'
+    user: 'root'
+    expose:
+      - '8888'
+    ports:
+      - '127.0.0.1:8888:8888'
+    volumes:
+      - ./:/home/jovyan/work
