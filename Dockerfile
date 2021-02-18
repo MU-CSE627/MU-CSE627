@@ -7,4 +7,4 @@ USER jovyan
 
 RUN conda env update --prune
 
-RUN python3 -m ipykernel install --user --name cse627
+RUN /opt/conda/envs/cse627/bin/python -m ipykernel install --user --name cse627
