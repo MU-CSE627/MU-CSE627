@@ -1,0 +1,8 @@
+name: cse627
+dependencies:
+  - numpy
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - ipython
+  - ipykernel
